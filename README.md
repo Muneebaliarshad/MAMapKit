@@ -8,16 +8,13 @@
 ### Functionalities 
 - [Current Location](#current-location)
 - [Map Types](#map-types)
-  - Hybrid
-  - Hybrid Flyover
-  - Muted Standard
-  - Satellite
-  - Satellite Flyover
   - Standard
+  - Satellite
+  - Hybrid
 - [Pin On Map](#pin-on-map)
     - [Default](#default)
-    - [With custom image/Annotation](#with-custom-image)
-- [Draw Circle on given location](#draw-circle-on-given-location)
+    - [With custom image](#with-custom-image)
+    - [Annotation](#with-custom-image)
 
 
 ### Current Location
@@ -41,11 +38,5 @@ self.mapView.setPinOnMap(view: self.view, title: "Islamabad", locationName: "Pak
 With Custom Image
 ```swift
 self.mapView.setPinWithImageOnMap(view: self.view, title: "Islamabad", locationName: "Pakistan", coordinate: self.location)
-```
-
-### Draw Circle on given location
-
-```swift
-self.mapView.drawCircle(coordinate: self.islamabad, radius: 200)
 ```
 
