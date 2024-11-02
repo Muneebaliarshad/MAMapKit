@@ -3,31 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AA53FD382110B61100A0C897 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53FD372110B61100A0C897 /* AppDelegate.swift */; };
-		AA53FD3A2110B61100A0C897 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53FD392110B61100A0C897 /* MapKitViewController.swift */; };
+		AA53FD3A2110B61100A0C897 /* DefaultMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53FD392110B61100A0C897 /* DefaultMapViewController.swift */; };
 		AA53FD3D2110B61100A0C897 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA53FD3B2110B61100A0C897 /* Main.storyboard */; };
 		AA53FD3F2110B61300A0C897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA53FD3E2110B61300A0C897 /* Assets.xcassets */; };
 		AA53FD422110B61300A0C897 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA53FD402110B61300A0C897 /* LaunchScreen.storyboard */; };
 		AA53FD4E2110B80900A0C897 /* MAMapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53FD4C2110B80900A0C897 /* MAMapKit.swift */; };
 		AA53FD4F2110B80900A0C897 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53FD4D2110B80900A0C897 /* MapPin.swift */; };
-		AA53FD512110BC9800A0C897 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53FD502110BC9700A0C897 /* Constants.swift */; };
+		AAF2F6342CAB1206009F9481 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF2F6332CAB1206009F9481 /* MainViewController.swift */; };
+		AAF2F6362CAB182C009F9481 /* AnnotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF2F6352CAB182C009F9481 /* AnnotationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA53FD342110B61100A0C897 /* MAMapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAMapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA53FD372110B61100A0C897 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA53FD392110B61100A0C897 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		AA53FD392110B61100A0C897 /* DefaultMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMapViewController.swift; sourceTree = "<group>"; };
 		AA53FD3C2110B61100A0C897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA53FD3E2110B61300A0C897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA53FD412110B61300A0C897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA53FD432110B61300A0C897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA53FD4C2110B80900A0C897 /* MAMapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAMapKit.swift; sourceTree = "<group>"; };
 		AA53FD4D2110B80900A0C897 /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
-		AA53FD502110BC9700A0C897 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AAF2F6332CAB1206009F9481 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AAF2F6352CAB182C009F9481 /* AnnotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				AA53FD492110B69000A0C897 /* Application */,
-				AA53FD4A2110B6BF00A0C897 /* Utility Classes */,
 				AA53FD4B2110B6CF00A0C897 /* MapKit */,
+				AAF2F6322CAB11EB009F9481 /* Controllers */,
 				AA53FD432110B61300A0C897 /* Info.plist */,
 			);
 			path = MAMapKit;
@@ -79,22 +81,23 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		AA53FD4A2110B6BF00A0C897 /* Utility Classes */ = {
-			isa = PBXGroup;
-			children = (
-				AA53FD502110BC9700A0C897 /* Constants.swift */,
-			);
-			path = "Utility Classes";
-			sourceTree = "<group>";
-		};
 		AA53FD4B2110B6CF00A0C897 /* MapKit */ = {
 			isa = PBXGroup;
 			children = (
 				AA53FD4D2110B80900A0C897 /* MapPin.swift */,
 				AA53FD4C2110B80900A0C897 /* MAMapKit.swift */,
-				AA53FD392110B61100A0C897 /* MapKitViewController.swift */,
 			);
 			path = MapKit;
+			sourceTree = "<group>";
+		};
+		AAF2F6322CAB11EB009F9481 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAF2F6332CAB1206009F9481 /* MainViewController.swift */,
+				AA53FD392110B61100A0C897 /* DefaultMapViewController.swift */,
+				AAF2F6352CAB182C009F9481 /* AnnotationViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +126,9 @@
 		AA53FD2C2110B61100A0C897 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1600;
 				ORGANIZATIONNAME = "Muneeb Ali";
 				TargetAttributes = {
 					AA53FD332110B61100A0C897 = {
@@ -168,11 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA53FD512110BC9800A0C897 /* Constants.swift in Sources */,
 				AA53FD4F2110B80900A0C897 /* MapPin.swift in Sources */,
-				AA53FD3A2110B61100A0C897 /* MapKitViewController.swift in Sources */,
+				AA53FD3A2110B61100A0C897 /* DefaultMapViewController.swift in Sources */,
 				AA53FD4E2110B80900A0C897 /* MAMapKit.swift in Sources */,
+				AAF2F6362CAB182C009F9481 /* AnnotationViewController.swift in Sources */,
 				AA53FD382110B61100A0C897 /* AppDelegate.swift in Sources */,
+				AAF2F6342CAB1206009F9481 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +229,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -235,6 +241,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -249,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +291,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -295,6 +303,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -303,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -317,13 +326,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8G67PWRUBR;
+				DEVELOPMENT_TEAM = QMZUZZS988;
 				INFOPLIST_FILE = MAMapKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = muneeb.MAMapKit;
+				PRODUCT_BUNDLE_IDENTIFIER = muneeb.mamapKit.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -335,13 +345,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8G67PWRUBR;
+				DEVELOPMENT_TEAM = QMZUZZS988;
 				INFOPLIST_FILE = MAMapKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = muneeb.MAMapKit;
+				PRODUCT_BUNDLE_IDENTIFIER = muneeb.mamapKit.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
