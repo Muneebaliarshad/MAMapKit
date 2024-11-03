@@ -6,17 +6,17 @@
   
 # Overview
 ### Functionalities 
-- [Current Location](#current-location)
-- [Map Types](#map-types)
-  - Standard
-  - Satellite
-  - Hybrid
-- [Pin On Map](#pin-on-map)
-    - [Default](#default)
-    - [With custom image](#with-custom-image)
-    - [Annotation](#with-custom-image)
+- [x] Current Location
+- [x] Map Types
+  - [x] Standard
+  - [x] Satellite
+  - [x] Hybrid
+- [x] Annotations
+    - [x] Default Pin
+    - [x] Custom image
+    - [x] Cluster
 
-
+# How To Use
 ### Current Location
 
 ```swift
@@ -26,17 +26,29 @@ self.mapView.currentLocation()
 ### Map Types
 
 ```swift
-self.present(self.mapView.mapTerrin(), animated: true, completion: nil)
+mapView.mapType = .standard
+```
+
+```swift
+mapView.mapType = .satellite
+```
+
+```swift
+mapView.mapType = .hybrid
+```
+
+```swift
+mapView.mapType = .standard
 ```
 
 ### Pin On Map
     
-Default
+Default Pin
 ```swift
-self.mapView.setPinOnMap(view: self.view, title: "Islamabad", locationName: "Pakistan", coordinate: self.islamabad)
+mapView.setPinOnMap(view: self.view, title: "Title", locationName: "Location Name", coordinate: mapView.currentLocation)
 ```
 With Custom Image
 ```swift
-self.mapView.setPinWithImageOnMap(view: self.view, title: "Islamabad", locationName: "Pakistan", coordinate: self.location)
+mapView.setPinWithImageOnMap(view: self.view, title: "Title", locationName: "Location Name", coordinate: mapView.currentLocation)
 ```
 
